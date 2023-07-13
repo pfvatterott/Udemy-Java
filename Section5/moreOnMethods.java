@@ -22,5 +22,6 @@ public class moreOnMethods {
             finalScore += 1000;
         }
         return finalScore;
+      
     }
 }
