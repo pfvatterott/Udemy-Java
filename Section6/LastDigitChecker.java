@@ -19,4 +19,13 @@ public class LastDigitChecker {
             return false;
         }
     }
+
+    public static boolean isValid(int num) {
+        if (num < 10 || num > 1000) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
 }
