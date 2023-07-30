@@ -6,7 +6,7 @@ public class LargestPrime {
     }
 
     public static int getLargestPrime(int number) {
-        if (number < 0) {
+        if (number <= 0) {
             return -1;
         }
         int largestPrime = 0;
@@ -20,6 +20,9 @@ public class LargestPrime {
             if (isPrime && (number % i == 0)) {
                 largestPrime = i;
             }
+        }
+        if (largestPrime <= 1) {
+            return -1;
         }
         return largestPrime;
     }
