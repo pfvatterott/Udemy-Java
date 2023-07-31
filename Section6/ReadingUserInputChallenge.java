@@ -12,6 +12,8 @@ public class ReadingUserInputChallenge {
             try {
                 System.out.println("Enter number #" + number);
                 String userNumber = scanner.nextLine();
+                //if you want to use decimals
+                // double doubleUserNumber = Double.parseDouble(userNumber);
                 int intUserNumber = Integer.parseInt(userNumber);
                 total = total + intUserNumber;
                 number++;
@@ -20,7 +22,6 @@ public class ReadingUserInputChallenge {
             }
         } while (number <= 5);
         System.out.println("Your total is " + total);
-        
     }
 
 }
