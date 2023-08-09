@@ -31,8 +31,7 @@ public class Point {
 
     public double distance() {
         // d(A,B)=√ (xB − xA) * (xB - xA) + (yB − yA) * (yB - yA)
-        double distance = (-this.x) * (-this.x) + (-this.y) * (-this.y);
-        return Math.sqrt(distance);
+        return distance(0, 0);
     }
 
     public double distance(int x, int y) {
@@ -41,7 +40,6 @@ public class Point {
     }
 
     public double distance(Point point) {
-        double distance = (point.getX() - this.x) * (point.getX() - this.x) + (point.getY() - this.y) * (point.getY() - this.y);
-        return Math.sqrt(distance);
+        return distance(point.getX(), point.getY());
     }
 }
