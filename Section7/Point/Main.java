@@ -1,7 +1,6 @@
-package Section7.WallArea;
+package Section7.Point;
 
 public class Main {
-    
     public static void main(String[] args) {
         
     }

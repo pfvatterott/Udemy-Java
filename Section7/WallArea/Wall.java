@@ -52,9 +52,4 @@ public class Wall {
     public double getArea() {
         return this.height * this.width;
     }
-
-    
-    
-
-    
 }
